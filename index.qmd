@@ -3,7 +3,7 @@ output: html_document
 editor_options: 
   chunk_output_type: console
 ---
-# About {.unnumbered}
+# About OpenLandMap-soildb {.unnumbered}
 
 ```{r, include=FALSE, message=FALSE, results='hide'}
 ls <- c("jsonlite", "RCurl", "emo", "stringi", "sf")
@@ -13,7 +13,7 @@ if (length(new.packages)) install.packages(new.packages, repos = "https://cloud.
 lapply(ls, require, character.only = TRUE)
 ```
 
-This is a public compendium of global, regional, national and
+OpenLandMap-soildb is a public compendium of global, regional, national and
 sub-national **soil samples** and/or **soil profile** datasets (points with
 Observations and Measurements of soil properties and characteristics).
 Datasets listed here, assuming [compatible open data license](https://opendefinition.org/licenses/), are afterwards
@@ -38,12 +38,12 @@ through a diversity of standard formats:
 - RDS file (native R data format);
 - GPKG file ([Geopackage file](https://www.geopackage.org/) ready to be opened in QGIS);
 
-All files can be downloaded from the `/out` [directory](https://github.com/OpenGeoHub/SoilSamples/-/tree/master/out).
+All files can be downloaded from the `/out` [directory](https://github.com/openlandmap/SoilSamples/tree/main/out).
 
 ## Add your own data {.unnumbered}
 
 The minimum requirements to submit a dataset for inclusion to [the
-OpenLandMap repository](https://github.com/OpenGeoHub/SoilSamples/) are:
+OpenLandMap repository](https://github.com/openlandmap/SoilSamples/) are:
 
 -   License and terms of use clearly specified AND,\
 -   Complete and consistent metadata that can ensure correct
@@ -54,7 +54,7 @@ OpenLandMap repository](https://github.com/OpenGeoHub/SoilSamples/) are:
 Data sets that do NOT satisfy the above listed minimum requirements might be
 removed. If you discover an issue with license, data description or
 version number of a dataset, please open a [Github
-issue](https://github.com/OpenGeoHub/SoilSamples/issues).
+issue](https://github.com/openlandmap/SoilSamples/issues).
 
 ```{r soil-pnts, echo=FALSE, fig.cap="Soil profiles and soil samples with chemical and physical properties global compilation preview.", out.width="100%"}
 knitr::include_graphics("img/sol_chem.pnts_sites.png")
@@ -191,7 +191,7 @@ and references. Some highly recommended protocols and standards include:
 ## Contributing {.unnumbered}
 
 Please feel free to contribute entries. See [GitHub
-repository](https://github.com/OpenGeoHub/SoilSamples) for more detailed
+repository](https://github.com/openlandmap/SoilSamples) for more detailed
 instructions.
 
 ## Contributors {.unnumbered}
@@ -199,8 +199,7 @@ instructions.
 If you contribute, add also your name and Twitter, ORCID or blog link
 below:
 
-[Tomislav Hengl](https://twitter.com/tom_hengl), [Jonathan Sanderman](https://twitter.com/sandersoil), [Mario Antonio Guevara
-Santamaria](https://orcid.org/0000-0002-9788-9947),
+[Tomislav Hengl](https://twitter.com/tom_hengl), 
 
 This document is based on the <https://www.bigbookofr.com/> repository
 by Oscar Baruffa.
@@ -229,10 +228,10 @@ produce derivative works, please contact us and we will correct asap.
 To cite this dataset please use:
 
 ```
-@dataset{hengl_t_2023_4748499,
-  author       = {Hengl, T. and Gupta, S. and Minarik, R.},
+@dataset{hengl_2025_soildb,
+  author       = {Hengl, T. and Gupta, S.},
   title        = {{An Open Compendium of Soil Datasets: Soil Observations and Measurements}},
-  year         = 2023,
+  year         = 2025,
   publisher    = {OpenGeoHub foundation},
   address      = {Wageningen},
   version      = {v0.2},

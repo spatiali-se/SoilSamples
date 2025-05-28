@@ -23,9 +23,9 @@ website:
     - icon: github
       menu:
       - text: Source Code
-        url:  https://github.com/OpenGeoHub/SoilSamples
+        url:  https://github.com/OpenLandMap/SoilSamples
       - text: Report a Bug
-        url:  https://github.com/OpenGeoHub/SoilSamples/issues
+        url:  https://github.com/OpenLandMap/SoilSamples/issues
     background: light
     search: true
     logo: ./img/openlandmap_v2_logo.png
@@ -39,7 +39,7 @@ website:
       - text: "Land Carbon Lab"
         file: https://landcarbonlab.org
   reader-mode: true
-  repo-url: https://github.com/OpenGeoHub/SoilSamples
+  repo-url: https://github.com/OpenLandMap/SoilSamples
   repo-actions: [edit, issue]
   sidebar:
     style: "docked"
@@ -61,7 +61,7 @@ website:
     left: "© 2025, OpenGeoHub foundation"
     right:
       - icon: github
-        href: https://github.com/OpenGeoHub/SoilSamples
+        href: https://github.com/OpenLandMap/SoilSamples
       - icon: mastodon
         href: https://fosstodon.org/@opengeohub
       - icon: twitter
@@ -74,7 +74,7 @@ website:
   twitter-card:
     image: "img/sol_chem.pnts_sites.png"
   open-graph:
-    description: "This is a public compendium of global, regional, national and sub-national soil samples and/or soil profile datasets (points with Observations and Measurements of soil properties and characteristics). Data sets listed here, assuming compatible open license, are afterwards imported into a common library. Contributions are welcome. To discuss issues or report a bug please use the repository homepage. If you have an addition or correction, make changes to the Rmd's and make pull-request."
+    description: "OpenLandMap-soildb is a public compendium of global, regional, national and sub-national soil samples and/or soil profile datasets (points with Observations and Measurements of soil properties and characteristics). Data sets listed here, assuming compatible open license, are afterwards imported into a common library. Contributions are welcome. To discuss issues or report a bug please use the repository homepage. If you have an addition or correction, make changes to the Rmd's and make pull-request."
 
 bibliography: ./tex/refs.bib
 

@@ -5,7 +5,7 @@ Authors@R: c(
     person("Tomislav", "Hengl", , "tom.hengl@opengeohub.org", role = c("aut", "cre")),
     person("Surya", "Gupta", , "surya.gupta@unibas.ch", role = c("aut", "cre"))
   )
-URL: https://github.com/OpenGeoHub/SoilSamples/
+URL: https://github.com/OpenLandMap/SoilSamples/
 Depends: 
     R (>= 3.1.0)
 Imports:

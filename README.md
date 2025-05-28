@@ -7,15 +7,15 @@ bind to single GeoPackage file via [the OpenLandMap](https://opengeohub.org/abou
 
 To cite this book please use:
 
-- Hengl, T., Gupta, S., Minarik, R., and others, (2024). [**An Open Compendium of Soil Datasets: Soil Observations and Measurements**](https://opengeohub.github.io/SoilSamples/). OpenGeoHub foundation, Wageningen, the Netherlands, <https://opengeohub.github.io/SoilSamples/>, DOI: <https://doi.org/10.5281/zenodo.4748499>.
+- Hengl, T., Gupta, S., and others, (2025). [**An Open Compendium of Soil Datasets: Soil Observations and Measurements**](https://opengeohub.github.io/SoilSamples/). OpenGeoHub foundation, Wageningen, the Netherlands, <https://soildb.OpenLandMap.org/>, DOI: <https://doi.org/10.5281/zenodo.4748499>.
 
 To cite these maps please use:
 
 ```
-@dataset{hengl_t_2023_4748499,
-  author       = {Hengl, T. and Gupta, S. and Minarik, R.},
+@dataset{hengl_2025_soildb,
+  author       = {Hengl, T. and Gupta, S.},
   title        = {{An Open Compendium of Soil Datasets: Soil Observations and Measurements}},
-  year         = 2024,
+  year         = 2025,
   publisher    = {OpenGeoHub foundation},
   address      = {Wageningen},
   version      = {v0.2},
@@ -25,7 +25,7 @@ To cite these maps please use:
 ```
 
 To download the most up-to-date snapshot of all publicly available soil points 
-bind and compiled as GeoPKG, please visit: [https://gitlab.com/openlandmap/compiled-ess-point-data-sets/](https://gitlab.com/openlandmap/compiled-ess-point-data-sets/-/tree/master/out/gpkg).
+bind and compiled as GeoPKG, please visit: [https://github.com/openlandmap/SoilSamples/](https://github.com/openlandmap/SoilSamples/tree/main/out).
 
 <img src="img/sol_chem.pnts_sites.png" alt="Soil profiles and soil samples with chemical and physical properties global compilation. For more info see: https://opengeohub.org/about-openlandmap/." width="90%" />
 

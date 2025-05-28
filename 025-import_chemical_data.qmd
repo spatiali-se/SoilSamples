@@ -2835,7 +2835,7 @@ out.gpkg = paste0(drv, "sol_chem.pnts_horizons.gpkg")
 #unlink(out.gpkg)
 if(!file.exists(out.gpkg)){
   sf::st_write(st_as_sf(tot_sprops_w.pnts), out.gpkg, "sol_chem.pnts_horizons", driver="GPKG", append=FALSE)
-  sf::st_write(st_as_sf(tot_sprops_w.pnts[!sel.rm.pnts,]), out.gpkg, "sol_chem.pnts_horizons", driver="GPKG")
+  sf::st_write(st_as_sf(tot_sprops_w.pnts[!sel.rm.pnts,]), "./out/gpkg/sol_chem.pnts_horizons.gpkg", "sol_chem.pnts_horizons", driver="GPKG")
 }
 ```
 

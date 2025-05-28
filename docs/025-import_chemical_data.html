@@ -105,7 +105,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <meta property="og:title" content="An open compendium of global soil samples and observations">
-<meta property="og:description" content="This is a public compendium of global, regional, national and sub-national soil samples and/or soil profile datasets (points with Observations and Measurements of soil properties and characteristics). Data sets listed here, assuming compatible open license, are afterwards imported into a common library. Contributions are welcome. To discuss issues or report a bug please use the repository homepage. If you have an addition or correction, make changes to the Rmd’s and make pull-request.">
+<meta property="og:description" content="OpenLandMap-soildb is a public compendium of global, regional, national and sub-national soil samples and/or soil profile datasets (points with Observations and Measurements of soil properties and characteristics). Data sets listed here, assuming compatible open license, are afterwards imported into a common library. Contributions are welcome. To discuss issues or report a bug please use the repository homepage. If you have an addition or correction, make changes to the Rmd’s and make pull-request.">
 <meta property="og:site_name" content="An open compendium of global soil samples and observations">
 <meta name="twitter:title" content="An open compendium of global soil samples and observations">
 <meta name="twitter:description" content="">
@@ -159,12 +159,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
       <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
-            <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/OpenGeoHub/SoilSamples">
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/OpenLandMap/SoilSamples">
             Source Code
             </a>
           </li>
           <li>
-            <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/OpenGeoHub/SoilSamples/issues">
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/OpenLandMap/SoilSamples/issues">
             Report a Bug
             </a>
           </li>
@@ -208,7 +208,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About</span></a>
+ <span class="menu-text">About OpenLandMap-soildb</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -279,7 +279,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#save-final-analysis-ready-objects" id="toc-save-final-analysis-ready-objects" class="nav-link" data-scroll-target="#save-final-analysis-ready-objects">Save final analysis-ready objects:</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/OpenGeoHub/SoilSamples/edit/main/025-import_chemical_data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OpenGeoHub/SoilSamples/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/OpenLandMap/SoilSamples/edit/main/025-import_chemical_data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OpenLandMap/SoilSamples/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -290,7 +290,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="soil-chemical-and-physical-properties" class="level1">
 <h1>Soil chemical and physical properties</h1>
 <p>The code and data set is continuously being updated. If you notice a bug or typo, please <a href="https://github.com/OpenGeoHub/SoilSamples/issues">open an issue</a> and report.</p>
-<p>Last update: 2025-04-01</p>
+<p>Last update: 2025-05-28</p>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>This section describes import steps used to produce a global compilation of soil laboratory data with chemical (and physical) soil properties that can be then used for predictive soil mapping / modeling at global and regional scales.</p>
@@ -1571,7 +1571,7 @@ Joining by: tex_field</code></pre>
 <span id="cb100-30"><a href="#cb100-30" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb100-31"><a href="#cb100-31" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(chemsprops.NPDB)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 55142    39</code></pre>
+<pre><code>[1] 45917    39</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb102"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb102-1"><a href="#cb102-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 55809    39</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -3255,7 +3255,7 @@ Joining with `by = join_by(BIS_tbl, BIS_type, sample_id, site_id, X, Y, hor_nr, 
 </div>
 <div class="sourceCode cell-code" id="cb262"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb262-1"><a href="#cb262-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(chemsprops.NLBIS)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 116167     39</code></pre>
+<pre><code>[1] 116286     39</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb264"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb264-1"><a href="#cb264-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 116290     39</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -3669,7 +3669,7 @@ Joining by: location_id</code></pre>
 <span id="cb292-81"><a href="#cb292-81" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb292-82"><a href="#cb292-82" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(chemsprops.SIM)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 80607    39</code></pre>
+<pre><code>[1] 80648    39</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb294"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb294-1"><a href="#cb294-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 80652    39</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -3719,7 +3719,7 @@ Warning: NAs introduced by coercion</code></pre>
 <span id="cb298-2"><a href="#cb298-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tex.rm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
--2997.0   100.0   100.0   100.2   100.0  2997.0  594431 </code></pre>
+-2997.0   100.0   100.0   100.2   100.0  2997.0  586797 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb300"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb300-1"><a href="#cb300-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(j <span class="cf">in</span> <span class="fu">c</span>(<span class="st">"clay_total"</span>, <span class="st">"silt_total"</span>, <span class="st">"sand_total"</span>, <span class="st">"total_frag_wt_pct_gt_2_mm_ws"</span>)){</span>
 <span id="cb300-2"><a href="#cb300-2" aria-hidden="true" tabindex="-1"></a>  tot_sprops[,j] <span class="ot">=</span> <span class="fu">ifelse</span>(tot_sprops[,j]<span class="sc">&gt;</span><span class="dv">100</span><span class="sc">|</span>tot_sprops[,j]<span class="sc">&lt;</span><span class="dv">0</span>, <span class="cn">NA</span>, tot_sprops[,j])</span>
@@ -3744,7 +3744,7 @@ Warning: NAs introduced by coercion</code></pre>
 <span id="cb301-3"><a href="#cb301-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">is.na</span>(tot_sprops<span class="sc">$</span>hzn_depth))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Mode   FALSE    TRUE 
-logical 1581118   41748 </code></pre>
+logical 1572349   41452 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb303"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb303-1"><a href="#cb303-1" aria-hidden="true" tabindex="-1"></a><span class="do">## 33199</span></span>
 <span id="cb303-2"><a href="#cb303-2" aria-hidden="true" tabindex="-1"></a><span class="do">## Note: large number of horizons without a depth</span></span>
@@ -3760,13 +3760,13 @@ logical 1581118   41748 </code></pre>
 <pre><code>             AfSIS1              AfSPDB     Alaska_interior              BZE_LW 
                4369               68794                4011               17189 
         Canada_CUFS         Canada_NPDB    Canada_subarctic       Chilean_SOCDB 
-              15873               53153                1381               16887 
+              15873               44224                1381               16887 
         China_SOTER               CIFOR           CostaRica Croatian_Soil_Pedon 
                5115                 577                2037                5757 
       CSIRO_NatSoil        Ecuador_HESD                FEBR                FRED 
               89645               30167               24353               12758 
          GEMAS_2009       GLanCE.points               GROOT    Guatemala_GTMSOC 
-               4131               80607               16271                 910 
+               4131               80648               16271                 910 
           Iran_SPDB                ISCN               ISCND                ISDA 
                4859               27236                4114               49225 
          ISRIC_WISE             LandPKS          LUCAS_2009          LUCAS_2015 
@@ -3774,7 +3774,7 @@ logical 1581118   41748 </code></pre>
          LUCAS_2018         MangrovesDB         MexicoINEGI            NAMSOTER 
               18982                7986               16820                2943 
               NCSCD     Netherlands.BIS   Portugal.INFOSOLO   Potash_et_al_2023 
-               7348              116167                9934                3977 
+               7348              116286                9934                3977 
          PRONASOLOS           QuebecTEX        Russia_EGRPR       ScotlandNSIS1 
               32615               29570                4506                3091 
              SISLAC       Slovenia.SPDB              SOCPDB               SoDaH 
@@ -3794,7 +3794,7 @@ logical 1581118   41748 </code></pre>
 <div class="sourceCode cell-code" id="cb307"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb307-1"><a href="#cb307-1" aria-hidden="true" tabindex="-1"></a>tot_sprops<span class="sc">$</span>olc_id <span class="ot">=</span> olctools<span class="sc">::</span><span class="fu">encode_olc</span>(tot_sprops<span class="sc">$</span>latitude_decimal_degrees, tot_sprops<span class="sc">$</span>longitude_decimal_degrees, <span class="dv">11</span>)</span>
 <span id="cb307-2"><a href="#cb307-2" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(<span class="fu">levels</span>(<span class="fu">as.factor</span>(tot_sprops<span class="sc">$</span>olc_id)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 346623</code></pre>
+<pre><code>[1] 346691</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb309"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb309-1"><a href="#cb309-1" aria-hidden="true" tabindex="-1"></a><span class="do">## 346748</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -3837,7 +3837,7 @@ logical 1581118   41748 </code></pre>
 <span id="cb312-10"><a href="#cb312-10" aria-hidden="true" tabindex="-1"></a><span class="do">## final number of unique spatial locations:</span></span>
 <span id="cb312-11"><a href="#cb312-11" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(tot_sprops.pnts)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 346623</code></pre>
+<pre><code>[1] 346691</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb314"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb314-1"><a href="#cb314-1" aria-hidden="true" tabindex="-1"></a><span class="do">## 346748</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -3849,7 +3849,7 @@ logical 1581118   41748 </code></pre>
 <div class="sourceCode cell-code" id="cb315"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb315-1"><a href="#cb315-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb315-2"><a href="#cb315-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tot_sprops, <span class="fu">aes</span>(<span class="at">x=</span>source_db, <span class="at">y=</span><span class="fu">log1p</span>(organic_carbon))) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 449776 rows containing non-finite outside the scale range
+<pre><code>Warning: Removed 441041 rows containing non-finite outside the scale range
 (`stat_boxplot()`).</code></pre>
 </div>
 <div class="cell-output-display">
@@ -3876,7 +3876,7 @@ logical 1581118   41748 </code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb318"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb318-1"><a href="#cb318-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tot_sprops, <span class="fu">aes</span>(<span class="at">x=</span>source_db, <span class="at">y=</span>bulk_density_oven_dry)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 1298289 rows containing non-finite outside the scale range
+<pre><code>Warning: Removed 1289163 rows containing non-finite outside the scale range
 (`stat_boxplot()`).</code></pre>
 </div>
 <div class="cell-output-display">
@@ -3901,7 +3901,7 @@ logical 1581118   41748 </code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb321"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb321-1"><a href="#cb321-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tot_sprops, <span class="fu">aes</span>(<span class="at">x=</span>source_db, <span class="at">y=</span><span class="fu">log1p</span>(oc_d))) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 1254896 rows containing non-finite outside the scale range
+<pre><code>Warning: Removed 1244930 rows containing non-finite outside the scale range
 (`stat_boxplot()`).</code></pre>
 </div>
 <div class="cell-output-display">
@@ -3941,7 +3941,7 @@ logical 1581118   41748 </code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb325"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb325-1"><a href="#cb325-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tot_sprops, <span class="fu">aes</span>(<span class="at">x=</span>source_db, <span class="at">y=</span>ph_h2o)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 759168 rows containing non-finite outside the scale range
+<pre><code>Warning: Removed 750422 rows containing non-finite outside the scale range
 (`stat_boxplot()`).</code></pre>
 </div>
 <div class="cell-output-display">
@@ -4000,7 +4000,7 @@ logical 1581118   41748 </code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb331"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb331-1"><a href="#cb331-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tot_sprops, <span class="fu">aes</span>(<span class="at">x=</span>source_db, <span class="at">y=</span>clay_total)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 604421 rows containing non-finite outside the scale range
+<pre><code>Warning: Removed 596969 rows containing non-finite outside the scale range
 (`stat_boxplot()`).</code></pre>
 </div>
 <div class="cell-output-display">
@@ -4028,7 +4028,7 @@ logical 1581118   41748 </code></pre>
 <pre><code>Warning in log1p(sum_of_cations_cec_pH_8_2): NaNs produced</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 1142177 rows containing non-finite outside the scale range
+<pre><code>Warning: Removed 1131440 rows containing non-finite outside the scale range
 (`stat_boxplot()`).</code></pre>
 </div>
 <div class="cell-output-display">
@@ -4045,7 +4045,7 @@ logical 1581118   41748 </code></pre>
 <pre><code>Warning in log1p(total_nitrogen_ncs): NaNs produced</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 1032345 rows containing non-finite outside the scale range
+<pre><code>Warning: Removed 1021630 rows containing non-finite outside the scale range
 (`stat_boxplot()`).</code></pre>
 </div>
 <div class="cell-output-display">
@@ -4062,7 +4062,7 @@ logical 1581118   41748 </code></pre>
 <pre><code>Warning in log1p(k_ext): NaNs produced</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 929218 rows containing non-finite outside the scale range
+<pre><code>Warning: Removed 919110 rows containing non-finite outside the scale range
 (`stat_boxplot()`).</code></pre>
 </div>
 <div class="cell-output-display">
@@ -4076,7 +4076,7 @@ logical 1581118   41748 </code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb343"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb343-1"><a href="#cb343-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tot_sprops, <span class="fu">aes</span>(<span class="at">x=</span>source_db, <span class="at">y=</span><span class="fu">log1p</span>(ec_water_extractable))) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 1432001 rows containing non-finite outside the scale range
+<pre><code>Warning: Removed 1423232 rows containing non-finite outside the scale range
 (`stat_boxplot()`).</code></pre>
 </div>
 <div class="cell-output-display">
@@ -4098,7 +4098,7 @@ logical 1581118   41748 </code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb348"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb348-1"><a href="#cb348-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(sprops_yrs, <span class="fu">aes</span>(<span class="at">x=</span>source_db, <span class="at">y=</span>year)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 160530 rows containing non-finite outside the scale range
+<pre><code>Warning: Removed 160312 rows containing non-finite outside the scale range
 (`stat_boxplot()`).</code></pre>
 </div>
 <div class="cell-output-display">
@@ -4188,7 +4188,7 @@ Attaching package: 'data.table'</code></pre>
 <span id="cb360-3"><a href="#cb360-3" aria-hidden="true" tabindex="-1"></a><span class="co">#unlink(out.gpkg)</span></span>
 <span id="cb360-4"><a href="#cb360-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">file.exists</span>(out.gpkg)){</span>
 <span id="cb360-5"><a href="#cb360-5" aria-hidden="true" tabindex="-1"></a>  sf<span class="sc">::</span><span class="fu">st_write</span>(<span class="fu">st_as_sf</span>(tot_sprops_w.pnts), out.gpkg, <span class="st">"sol_chem.pnts_horizons"</span>, <span class="at">driver=</span><span class="st">"GPKG"</span>, <span class="at">append=</span><span class="cn">FALSE</span>)</span>
-<span id="cb360-6"><a href="#cb360-6" aria-hidden="true" tabindex="-1"></a>  sf<span class="sc">::</span><span class="fu">st_write</span>(<span class="fu">st_as_sf</span>(tot_sprops_w.pnts[<span class="sc">!</span>sel.rm.pnts,]), out.gpkg, <span class="st">"sol_chem.pnts_horizons"</span>, <span class="at">driver=</span><span class="st">"GPKG"</span>)</span>
+<span id="cb360-6"><a href="#cb360-6" aria-hidden="true" tabindex="-1"></a>  sf<span class="sc">::</span><span class="fu">st_write</span>(<span class="fu">st_as_sf</span>(tot_sprops_w.pnts[<span class="sc">!</span>sel.rm.pnts,]), <span class="st">"./out/gpkg/sol_chem.pnts_horizons.gpkg"</span>, <span class="st">"sol_chem.pnts_horizons"</span>, <span class="at">driver=</span><span class="st">"GPKG"</span>)</span>
 <span id="cb360-7"><a href="#cb360-7" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
@@ -4783,11 +4783,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OpenGeoHub/SoilSamples/edit/main/025-import_chemical_data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OpenGeoHub/SoilSamples/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/OpenLandMap/SoilSamples/edit/main/025-import_chemical_data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/OpenLandMap/SoilSamples/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/OpenGeoHub/SoilSamples">
+    <a class="nav-link" href="https://github.com/OpenLandMap/SoilSamples">
       <i class="bi bi-github" role="img">
 </i> 
     </a>
