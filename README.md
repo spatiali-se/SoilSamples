@@ -7,7 +7,9 @@ bind to single GeoPackage file via [the OpenLandMap](https://opengeohub.org/abou
 
 To cite this book please use:
 
-- Hengl, T., Gupta, S., and others, (2025). [**An Open Compendium of Soil Datasets: Soil Observations and Measurements**](https://opengeohub.github.io/SoilSamples/). OpenGeoHub foundation, Wageningen, the Netherlands, <https://soildb.OpenLandMap.org/>, DOI: <https://doi.org/10.5281/zenodo.4748499>.
+- Hengl, T., Gupta, S., and others, (2025). [**An Open Compendium of Soil Datasets: Soil Observations and Measurements**](https://soildb.openlandmap.org). OpenGeoHub foundation, Wageningen, the Netherlands, <https://soildb.OpenLandMap.org/>, DOI: <https://doi.org/10.5281/zenodo.4748499>.
+
+<a rel="license" href="https://zenodo.org/doi/10.5281/zenodo.4748499"><img alt="DOI" style="border-width:0" src="https://zenodo.org/badge/DOI/10.5281/zenodo.4748499.svg" /></a><br />
 
 To cite these maps please use:
 
