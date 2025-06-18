@@ -6,7 +6,7 @@ editor_options:
 # About OpenLandMap-soildb {.unnumbered}
 
 ```{r, include=FALSE, message=FALSE, results='hide'}
-ls <- c("jsonlite", "RCurl", "emo", "stringi", "sf")
+ls <- c("jsonlite", "RCurl", "emo", "stringi", "sf", "zendown")
 new.packages <- ls[!(ls %in% installed.packages()[,"Package"])]
 if (length(new.packages)) install.packages(new.packages, repos = "https://cloud.r-project.org")
 # devtools::install_github("hadley/emo")
@@ -30,15 +30,33 @@ The specific objectives of this initiative are:
     
 <a href="https://opengeohub.github.io/SpatialSamples/"><img src="cover.jpg" alt="OpenLandMap banner" width="300"></a>
 
-## Download compiled data {.unnumbered}
+Access global predictions of soil properties and classes (based on these points) at 30-m spatial resolution:
 
-Compiled data (imported, standardized, quality-controlled) is available 
+- <https://github.com/openlandmap/soildb>  
+
+<a href="https://opengeohub.github.io/SpatialSamples/"><img src="img/predictions_30m_SOC_density_indonesia.jpg" alt="Comparison predictions of SOC density for 2000–2005 and 2020–2022 periods for area in Indonesia." width="650"></a>
+
+## Download compiled O&M data {.unnumbered}
+
+Compiled Observations & Measurements data (imported, standardized, quality-controlled) is available 
 through a diversity of standard formats:
 
 - RDS file (native R data format);
 - GPKG file ([Geopackage file](https://www.geopackage.org/) ready to be opened in QGIS);
 
-All files can be downloaded from the `/out` [directory](https://github.com/openlandmap/SoilSamples/tree/main/out).
+All files can be downloaded from the `/out` [directory](out/) or directly from Zenodo.org:
+
+```{r, eval=FALSE}
+library(zendown)
+soil_chem.pnts_horizons <- zen_file(deposit_id = 15593990, 
+                            file_name = "sol_chem.pnts_horizons.rds")
+soil_chem.hor = readRDS(soil_chem.pnts_horizons)
+str(soil_chem.hor)
+```
+
+**Important note**: in the case of BZE_LW coordinate locations have been degraded. 
+LUCAS points need to be imported separately. Several other data sets are available 
+to OpenGeoHub only under NDA / data sharing agreement.
 
 ## Add your own data {.unnumbered}
 
